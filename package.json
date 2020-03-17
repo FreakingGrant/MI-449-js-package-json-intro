@@ -8,10 +8,9 @@
     "build:sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
     "build:htmlhint": "htmlhint index.html",
     "build:stylelint": "stylelint source/scss/style.scss",
-    "build:stylelint-config-standard": "stylelint-config-standard source/scss style.scss",
     "build:standard": "standard clicky.js",
     "build": "run-s build:*",
-    "deploy:surge": "surge --project . --domain freakinggrant-js-package-json-intro.surge.sh",
+    "deploy:surge": "surge --project . --domain https://freakinggrant-js-package-json.surge.sh/",
     "deploy": "run-s build:* deploy:surge"
   },
   "devDependencies": {

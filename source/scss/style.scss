@@ -3,7 +3,7 @@
 body {
   margin: 0;
   background-color: #333;
-  color: #fff
+  color: #fff;
 }
 
 table.menu {
@@ -32,7 +32,8 @@ table.menu {
     width: 80px;
   }
 
-  td.label, td.result {
+  td.label,
+  td.result {
     text-align: right;
   }
 
@@ -55,7 +56,8 @@ table.menu {
       transition: width 0.5s, background-color 0.5s;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
       outline: none;
     }
   }
@@ -72,5 +74,3 @@ table.menu {
     cursor: pointer;
   }
 }
-
-
