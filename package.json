@@ -5,10 +5,10 @@
     "dev:server": "live-server",
     "dev:sass-watch": "node-sass source/scss/style.scss --watch --output=compiled/css --output-style=compressed --source-map=true",
     "dev": "run-p dev:*",
-    "build:sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
     "build:htmlhint": "htmlhint index.html",
     "build:stylelint": "stylelint source/scss/style.scss",
     "build:standard": "standard clicky.js",
+    "build:sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
     "build": "run-s build:*",
     "deploy:surge": "surge --project . --domain https://freakinggrant-js-package-json.surge.sh/",
     "deploy": "run-s build:* deploy:surge"
